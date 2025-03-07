@@ -11,7 +11,7 @@ class Solution {
             return;
         }
         for(int i=start;i<nums.length;i++ ){
-            swap(nums,start,i);
+            swap(nums,i,start);
             ans.add(nums[start]);
             solve(start+1,nums,ans,res);
             ans.remove(ans.size()-1);
